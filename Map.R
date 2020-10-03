@@ -28,7 +28,7 @@ server <- function(input, output, session) {
     
     rocketIcons <- icons(
       iconUrl = ifelse(wa_locations$Category == "Business",
-        "Blue rocket.jpg",
+        "greenrocket.jpg",
         "redrocket.png"),
       iconWidth = 38, iconHeight = 90,
       iconAnchorX = 22, iconAnchorY = 94,)
