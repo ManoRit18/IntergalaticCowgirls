@@ -15,12 +15,17 @@ ui <- fluidPage(
   sidebarLayout(
     sidebarPanel(
       column(3, 
-             checkboxGroupInput("checkGroup", 
-                                h3("Checkbox group"), 
-                                choices = c("Business" = 1, 
-                                            "Academic" = 2, 
-                                            "Recreational" = 3),
-                                selected = c(1, 2, 3))),
+             checkboxGroupInput(
+               inputId = "myGroup",
+               label = "Choose:", 
+               choiceNames = list(
+                 tags$span("Business", style = "color: green;"),
+                 tags$span("Academic", style = "color: red;"), 
+                 tags$span("Recreational", style = "color: blue;")
+               ),
+               choiceValues = c("Business", "Academic", "Recreational")
+             )
+      )
     ),
     mainPanel(
       leafletOutput("mymap"),
