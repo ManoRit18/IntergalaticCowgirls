@@ -10,7 +10,7 @@ r_colors <- rgb(t(col2rgb(colors()) / 255))
 names(r_colors) <- colors()
 
 ui <- fluidPage(
-  titlePanel("Space Exploration in Washington"),
+  titlePanel("Take Off: Washington"),
   
   sidebarLayout(
     sidebarPanel(
@@ -18,28 +18,20 @@ ui <- fluidPage(
              checkboxGroupInput("checkGroup", 
                                 h3("Checkbox group"), 
                                 choices = c("Business" = 1, 
-                                               "Academic" = 2, 
-                                               "Recreational" = 3),
+                                            "Academic" = 2, 
+                                            "Recreational" = 3),
                                 selected = c(1, 2, 3))),
     ),
     mainPanel(
       leafletOutput("mymap"),
       
-      h2("Local Events"),
-      
-      h2("Recent News"),
-      
-      h2("Notable Washingtonians"),
-      p("Thora Waters Halstead: Space biologist (WSU '50)"),
-      p("Jennifer Ross-Nazzal: NASA Historian (WSU '04)"),
-      p("Iris Fujiura Bombelyn: Engineer (WSU '83)"),
-      tags$a(href="https://magazine.wsu.edu/web-extra/space-cougs/", 
-             "More WSU graduates who have contributed to space exploration"),
-      p("Dottie Metcalf-Lindenburger: Astronaut"),
-      p("Wendy Lawrence: Astronaut"),
-      tags$a(href="https://www.seattletimes.com/seattle-news/5-washington-astronauts-try-to-put-outer-space-into-words-grandeur-that-is-beyond-what-i-can-describe/", 
-             "5 astronauts from Washington State"),
-      h2("About")
+      tabsetPanel(
+                  tabPanel("About", textOutput("about") ),
+                  tabPanel("Local Events", textOutput("local_events")),
+                  tabPanel("News", textOutput("news")),
+                  tabPanel("Women from Washington", htmlOutput("notable1"),
+                           htmlOutput("notable2"), htmlOutput("notable3"), htmlOutput("notable4"))
+      ),
     ),
     
   ),
@@ -48,6 +40,40 @@ ui <- fluidPage(
 )
 
 server <- function(input, output, session) {
+  
+  output$about <- renderText({
+    "this is text1"
+  })
+  
+  output$local_events <- renderText({
+    "this is text2"
+  })
+  
+  output$news <- renderText({
+    tags$a(href="https://www.nasa.gov/image-feature/goddard/2020/noaanasas-suomi-npp-satellite-focuses-on-washington-states-ring-of-fire/", 
+           "Satellites Take Images of Washington Wildfires")
+  })
+  
+  output$notable1 <- renderUI({
+    HTML(paste("Thora Waters Halstead: Space biologist (WSU '50)",
+          "Jennifer Ross-Nazzal: NASA Historian (WSU '04)",
+          "Iris Fujiura Bombelyn: Engineer (WSU '83)", sep="<br/>"))
+  })
+  
+  output$notable2 <- renderUI({
+    tags$a(href="https://magazine.wsu.edu/web-extra/space-cougs/", 
+           "More WSU graduates who have contributed to space exploration")    
+  })
+  
+  output$notable3 <- renderUI({
+    HTML(paste("Dottie Metcalf-Lindenburger: Astronaut",
+               "Wendy Lawrence: Astronaut", sep="<br/>"))
+  })
+  
+  output$notable4 <- renderUI({
+    tags$a(href="https://www.seattletimes.com/seattle-news/5-washington-astronauts-try-to-put-outer-space-into-words-grandeur-that-is-beyond-what-i-can-describe/", 
+           "More on astronauts from Washington State")
+  })
   
   points <- eventReactive(input$recalc, {
     cbind(rnorm(40) * 2 + 13, rnorm(40) + 48)
