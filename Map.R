@@ -16,7 +16,7 @@ ui <- fluidPage(
     sidebarPanel(
       column(3, 
              checkboxGroupInput(
-               inputId = "myGroup",
+               inputId = "checkGroup",
                label = "Choose:", 
                choiceNames = list(
                  tags$span("Business", style = "color: green;"),
@@ -83,23 +83,34 @@ server <- function(input, output, session) {
     cbind(rnorm(40) * 2 + 13, rnorm(40) + 48)
   }, ignoreNULL = FALSE)
   
+  rocketIcons <- icons(
+    iconUrl = ifelse(wa_locations$Category == "Business",
+                     "greenrocket.png",
+                     ifelse(wa_locations$Category == "Academic",
+                            "redrocket.png",
+                            "bluerocket.png")),
+    iconWidth = 38, iconHeight = 90,
+    iconAnchorX = 22, iconAnchorY = 40,)
+  
   output$mymap <- renderLeaflet({
 
     m <- leaflet() %>% setView(lng = -120.7401, lat = 47.7511, zoom = 6)
     m %>% addProviderTiles(providers$CartoDB.Positron)
     
-    rocketIcons <- icons(
-      iconUrl = ifelse(wa_locations$Category == "Business",
-                       "greenrocket.png",
-                       ifelse(wa_locations$Category == "Academic",
-                       "redrocket.png",
-                       "bluerocket.png")),
-      iconWidth = 38, iconHeight = 90,
-      iconAnchorX = 22, iconAnchorY = 40,)
-    
     leaflet(data = wa_locations) %>% addTiles() %>%
-      addMarkers(~-Longitude, ~Latitude, popup = ~MapLabel, icon=rocketIcons)
+      addMarkers(~-Longitude, ~Latitude, popup = ~MapLabel, icon=rocketIcons, group = "mygroup")
   })
+  
+  mydata_filtered <- reactive(wa_locations[wa_locations$Category %in% input$checkGroup, ])
+  
+  observeEvent(input$checkGroup, {
+    leafletProxy("mymap", data = mydata_filtered()) %>%
+      clearGroup ("mygroup") %>% 
+      addMarkers(~-Longitude, ~Latitude, 
+                 popup = ~MapLabel, 
+                 icon=rocketIcons,
+                 group = "mygroup")
+  })  
 }
 
 shinyApp(ui, server)
