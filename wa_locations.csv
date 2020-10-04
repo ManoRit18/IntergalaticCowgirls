@@ -1,37 +1,37 @@
-Name,Latitude,Longitude,Link,Category
-Boeing,47.5258119,122.3157887,http://www.boeing.com/specialty/radiation-effects-laboratory/index.page,Business
-SpaceX,47.6931642,122.0375806,https://www.spacex.com/,Business
-BlueOrigin,47.409871,122.241507,https://www.blueorigin.com/,Business
-Aeroject Rocketdyne,47.7024613,122.1637877,https://www.rocket.com/space,Business
-Stratolaunch,47.5979055,122.3285331,https://www.stratolaunch.com/,Business
-Spaceflight Industries/ BlackSky,47.6326152,122.3410074,https://www.spaceflightindustries.com/,Business
-Carlisle Interconnect Technologies,47.4321133,122.2338948,https://www.carlisleit.com/,Business
-Crane Aerospace & Electronics,47.846764,122.254409,https://www.craneae.com/electrical-power-solutions,Business
-Electroimpact ,47.8979376,122.2962707,https://www.electroimpact.com/Products.aspx,Business
-Helion Energy,47.6763369,122.1357345,https://www.helionenergy.com/,Business
-Janicki Industries,48.5152136,122.2160724,https://www.janicki.com/,Business
-Systima Technology,47.697022,122.18196,https://www.systima.com/,Business
-Tethers Unlimited,47.762163,122.183645,https://www.tethers.com//,Business
-Bellevue College,47.5843,122.1494,Astronomy Department: https://www.bellevuecollege.edu/astronomy/,Academic
-Evergreen State University,47.0735,122.9753,Astronomy Department: https://www.evergreen.edu/studies/astronomy,Academic
-Central Washington University,47.0073,120.5363,Astronomy Minor: https://www.cwu.edu/physics/astronomy-minor ,Academic
-Washington State University,46.7319,117.1542,Astronomy Department: https://physics.wsu.edu/,Academic
-University of Washington,47.655548,122.3032,"Astronomy Department: http://depts.washington.edu/astron/, Astronautics Department: https://www.aa.washington.edu/",Academic
-Olympic College,47.5753,122.6352,Astronomy Department: https://www.olympic.edu/astronomy ,Academic
-Seattle Central College,47.6163,122.3212,Astronomy Department: https://seattlecentral.edu/programs/college-transfer/college-transfer-programs/stem/astronomy ,Academic
-South Seattle College,47.548,122.3524,Astronomy Department: https://southseattle.edu/programs/physics-astronomy,Academic
-Spokane Falls Community College,47.6769,117.4643,Astronomy Department: https://sfcc.spokane.edu/What-to-Study/science-technology-engineering-mathematics/Astronomy,Academic
-Whitman College,46.0706,118.3306,Astronomy Department: https://www.whitman.edu/academics/majors-and-minors/astronomy,Academic
-Tacoma Community College,47.2462,122.522,Astronomy Department: https://www.tacomacc.edu/academics-programs/programs/astronomy,Academic
-Space Needle,47.6205,122.3493,https://www.washington.edu/uwired/outreach/cspn/Website/Classroom%20Materials/Pacific%20Northwest%20History/Lessons/Lesson%2025/25.html,Recreational
-Willard Smith Planetarium,47.6195,122.351,https://www.pacificsciencecenter.org/planetarium/,Recreational
-Bear Creek Observatory,47.7171,122.0866,http://www.bearcreekobservatory.com/index.aspx,Recreational
-Newport Geophysical Observatories,48.2644,117.1225,https://www.usgs.gov/natural-hazards/geomagnetism,Recreational
-Manastash Ridge Observatory,46.9507,120.7249,http://depts.washington.edu/astron/,Recreational
-LIGO Handford Observatory,46.4552,119.4075,https://www.ligo.caltech.edu/WA,Recreational
-Pierce College Science Dome,47.157,122.2733,https://www.pierce.ctc.edu/science-dome,Recreational
-Theodore Jacobsen Observatory,47.660432,122.3092,http://depts.washington.edu/astron/outreach/jacobsen-observatory/,Recreational
-Charles Simonyi Space Gallery,47.5185,122.2969,https://www.museumofflight.org/explore-the-museum/museum-galleries/space-gallery,Recreational
-Goldendale Observatory State Park,45.8389,120.815,http://www.goldendaleobservatory.com/,Recreational
-Tinyblue Observatory,48.0818,122.6,https://www.tinyblue.com/wordpress/,Recreational
-Starry Hill Observatory,46.8582,122.3588,http://starryhill.org/?p=about,Recreational
+Name,Latitude,Longitude,Link,Category,MapLabel
+Boeing,47.5258119,122.3157887,http://www.boeing.com/specialty/radiation-effects-laboratory/index.page,Business,Boeing : http://www.boeing.com/specialty/radiation-effects-laboratory/index.page
+SpaceX,47.6931642,122.0375806,https://www.spacex.com/,Business,SpaceX : https://www.spacex.com/
+BlueOrigin,47.409871,122.241507,https://www.blueorigin.com/,Business,BlueOrigin : https://www.blueorigin.com/
+Aeroject Rocketdyne,47.7024613,122.1637877,https://www.rocket.com/space,Business,Aeroject Rocketdyne : https://www.rocket.com/space
+Stratolaunch,47.5979055,122.3285331,https://www.stratolaunch.com/,Business,Stratolaunch : https://www.stratolaunch.com/
+Spaceflight Industries/ BlackSky,47.6326152,122.3410074,https://www.spaceflightindustries.com/,Business,Spaceflight Industries/ BlackSky : https://www.spaceflightindustries.com/
+Carlisle Interconnect Technologies,47.4321133,122.2338948,https://www.carlisleit.com/,Business,Carlisle Interconnect Technologies : https://www.carlisleit.com/
+Crane Aerospace & Electronics,47.846764,122.254409,https://www.craneae.com/electrical-power-solutions,Business,Crane Aerospace & Electronics : https://www.craneae.com/electrical-power-solutions
+Electroimpact ,47.8979376,122.2962707,https://www.electroimpact.com/Products.aspx,Business,Electroimpact  : https://www.electroimpact.com/Products.aspx
+Helion Energy,47.6763369,122.1357345,https://www.helionenergy.com/,Business,Helion Energy : https://www.helionenergy.com/
+Janicki Industries,48.5152136,122.2160724,https://www.janicki.com/,Business,Janicki Industries : https://www.janicki.com/
+Systima Technology,47.697022,122.18196,https://www.systima.com/,Business,Systima Technology : https://www.systima.com/
+Tethers Unlimited,47.762163,122.183645,https://www.tethers.com//,Business,Tethers Unlimited : https://www.tethers.com//
+Bellevue College,47.5843,122.1494,Astronomy Department: https://www.bellevuecollege.edu/astronomy/,Academic,Bellevue College : Astronomy Department: https://www.bellevuecollege.edu/astronomy/
+Evergreen State University,47.0735,122.9753,Astronomy Department: https://www.evergreen.edu/studies/astronomy,Academic,Evergreen State University : Astronomy Department: https://www.evergreen.edu/studies/astronomy
+Central Washington University,47.0073,120.5363,Astronomy Minor: https://www.cwu.edu/physics/astronomy-minor ,Academic,Central Washington University : Astronomy Minor: https://www.cwu.edu/physics/astronomy-minor 
+Washington State University,46.7319,117.1542,Astronomy Department: https://physics.wsu.edu/,Academic,Washington State University : Astronomy Department: https://physics.wsu.edu/
+University of Washington,47.655548,122.3032,"Astronomy Department: http://depts.washington.edu/astron/, Astronautics Department: https://www.aa.washington.edu/",Academic,"University of Washington : Astronomy Department: http://depts.washington.edu/astron/, Astronautics Department: https://www.aa.washington.edu/"
+Olympic College,47.5753,122.6352,Astronomy Department: https://www.olympic.edu/astronomy ,Academic,Olympic College : Astronomy Department: https://www.olympic.edu/astronomy 
+Seattle Central College,47.6163,122.3212,Astronomy Department: https://seattlecentral.edu/programs/college-transfer/college-transfer-programs/stem/astronomy ,Academic,Seattle Central College : Astronomy Department: https://seattlecentral.edu/programs/college-transfer/college-transfer-programs/stem/astronomy 
+South Seattle College,47.548,122.3524,Astronomy Department: https://southseattle.edu/programs/physics-astronomy,Academic,South Seattle College : Astronomy Department: https://southseattle.edu/programs/physics-astronomy
+Spokane Falls Community College,47.6769,117.4643,Astronomy Department: https://sfcc.spokane.edu/What-to-Study/science-technology-engineering-mathematics/Astronomy,Academic,Spokane Falls Community College : Astronomy Department: https://sfcc.spokane.edu/What-to-Study/science-technology-engineering-mathematics/Astronomy
+Whitman College,46.0706,118.3306,Astronomy Department: https://www.whitman.edu/academics/majors-and-minors/astronomy,Academic,Whitman College : Astronomy Department: https://www.whitman.edu/academics/majors-and-minors/astronomy
+Tacoma Community College,47.2462,122.522,Astronomy Department: https://www.tacomacc.edu/academics-programs/programs/astronomy,Academic,Tacoma Community College : Astronomy Department: https://www.tacomacc.edu/academics-programs/programs/astronomy
+Space Needle,47.6205,122.3493,https://www.washington.edu/uwired/outreach/cspn/Website/Classroom%20Materials/Pacific%20Northwest%20History/Lessons/Lesson%2025/25.html,Recreational,Space Needle : https://www.washington.edu/uwired/outreach/cspn/Website/Classroom%20Materials/Pacific%20Northwest%20History/Lessons/Lesson%2025/25.html
+Willard Smith Planetarium,47.6195,122.351,https://www.pacificsciencecenter.org/planetarium/,Recreational,Willard Smith Planetarium : https://www.pacificsciencecenter.org/planetarium/
+Bear Creek Observatory,47.7171,122.0866,http://www.bearcreekobservatory.com/index.aspx,Recreational,Bear Creek Observatory : http://www.bearcreekobservatory.com/index.aspx
+Newport Geophysical Observatories,48.2644,117.1225,https://www.usgs.gov/natural-hazards/geomagnetism,Recreational,Newport Geophysical Observatories : https://www.usgs.gov/natural-hazards/geomagnetism
+Manastash Ridge Observatory,46.9507,120.7249,http://depts.washington.edu/astron/,Recreational,Manastash Ridge Observatory : http://depts.washington.edu/astron/
+LIGO Handford Observatory,46.4552,119.4075,https://www.ligo.caltech.edu/WA,Recreational,LIGO Handford Observatory : https://www.ligo.caltech.edu/WA
+Pierce College Science Dome,47.157,122.2733,https://www.pierce.ctc.edu/science-dome,Recreational,Pierce College Science Dome : https://www.pierce.ctc.edu/science-dome
+Theodore Jacobsen Observatory,47.660432,122.3092,http://depts.washington.edu/astron/outreach/jacobsen-observatory/,Recreational,Theodore Jacobsen Observatory : http://depts.washington.edu/astron/outreach/jacobsen-observatory/
+Charles Simonyi Space Gallery,47.5185,122.2969,https://www.museumofflight.org/explore-the-museum/museum-galleries/space-gallery,Recreational,Charles Simonyi Space Gallery : https://www.museumofflight.org/explore-the-museum/museum-galleries/space-gallery
+Goldendale Observatory State Park,45.8389,120.815,http://www.goldendaleobservatory.com/,Recreational,Goldendale Observatory State Park : http://www.goldendaleobservatory.com/
+Tinyblue Observatory,48.0818,122.6,https://www.tinyblue.com/wordpress/,Recreational,Tinyblue Observatory : https://www.tinyblue.com/wordpress/
+Starry Hill Observatory,46.8582,122.3588,http://starryhill.org/?p=about,Recreational,Starry Hill Observatory : http://starryhill.org/?p=about

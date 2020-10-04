@@ -31,30 +31,29 @@ ui <- fluidPage(
       leafletOutput("mymap"),
       
       tabsetPanel(
-                  tabPanel("About", textOutput("about") ),
-                  tabPanel("Local Events", textOutput("local_events")),
-                  tabPanel("News", textOutput("news")),
+                  tabPanel("About", htmlOutput("about1") ),
+                  tabPanel("Local Events", htmlOutput("local_events")),
+                  tabPanel("News", htmlOutput("news")),
                   tabPanel("Women from Washington", htmlOutput("notable1"),
                            htmlOutput("notable2"), htmlOutput("notable3"), htmlOutput("notable4"))
       ),
     ),
-    
   ),
-
   p(),
 )
 
 server <- function(input, output, session) {
   
-  output$about <- renderText({
-    "this is text1"
+  output$about1 <- renderUI({
+    HTML(paste("","Here are ways that working in space technology benefits us on Earth!", sep="<br/>"))
   })
   
-  output$local_events <- renderText({
-    "this is text2"
+  output$local_events <- renderUI({
+    tags$a(href="https://nightsky.jpl.nasa.gov/clubs-and-events.cfm", 
+           "Find astronomy clubs and events near you!")
   })
   
-  output$news <- renderText({
+  output$news <- renderUI({
     tags$a(href="https://www.nasa.gov/image-feature/goddard/2020/noaanasas-suomi-npp-satellite-focuses-on-washington-states-ring-of-fire/", 
            "Satellites Take Images of Washington Wildfires")
   })
@@ -99,7 +98,7 @@ server <- function(input, output, session) {
       iconAnchorX = 22, iconAnchorY = 40,)
     
     leaflet(data = wa_locations) %>% addTiles() %>%
-      addMarkers(~-Longitude, ~Latitude, popup = ~as.character(Name), icon=rocketIcons)
+      addMarkers(~-Longitude, ~Latitude, popup = ~MapLabel, icon=rocketIcons)
   })
 }
 
