@@ -74,7 +74,7 @@ server <- function(input, output, session) {
   })
   
   output$about4 <- renderUI({
-    tags$a(href="https://www.nasa.gov/mission_pages/station/research/benefits/index.html", 
+    tags$a(href="https://www.nasa.gov/specials/60counting/tech.html ", 
            "60 Decades of NASA Technology")
   })
   
