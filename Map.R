@@ -91,7 +91,7 @@ server <- function(input, output, session) {
   })
   
   output$local_events3 <- renderUI({
-    tags$a(href="https://nightsky.jpl.nasa.gov/clubs-and-events.cfm", 
+    tags$a(href="https://spotthestation.nasa.gov/sightings/view.cfm?country=United_States&region=Washington&city=Seattle#.X3pkwGhKg2w", 
            "Spot the International Space Station over Washington!")
   })
   
