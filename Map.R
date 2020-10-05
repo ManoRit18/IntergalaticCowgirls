@@ -25,7 +25,8 @@ ui <- fluidPage(
                  tags$span("Academic", style = "color: red;"), 
                  tags$span("Recreational", style = "color: blue;")
                ),
-               choiceValues = c("Business", "Academic", "Recreational")
+               choiceValues = c("Business", "Academic", "Recreational"),
+               selected = c("Business", "Academic", "Recreational")
              )
       )
     ),
